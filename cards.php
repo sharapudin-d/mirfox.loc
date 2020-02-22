@@ -22,26 +22,49 @@
   <p>Переверните карту за 10 монет</p>
   <div class="cards_wrap">
     <div class="row">
-      <div class="card c1"></div>
-      <div class="card c2"></div>
-      <div class="card c3"></div>
+      <div class="card c1">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
+      <div class="card c2">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
+      <div class="card c3">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
     </div>
     <div class="row">
-      <div class="card c4"></div>
+      <div class="card c4">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
       <div class="card card_play c5 card_hover" onclick="play_cards()">
         <img src="./assets/img/play_butt.png" alt="">
       </div>
-      <div class="card c6"></div>
+      <div class="card c6">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
     </div>
     <div class="row">
-      <div class="card c7"></div>
-      <div class="card c8"></div>
-      <div class="card c9"></div>
+      <div class="card c7">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
+      <div class="card c8">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
+      <div class="card c9">
+        <div class="front_card"></div>
+        <div class="back_card"></div>
+      </div>
     </div>
   </div>
 </div>
 
-<script type="text/javascript" src="./assets/js/cards.js"></script>
 
 
 <!-- js -->
@@ -49,6 +72,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
+<script type="text/javascript" src="./assets/js/cards.js"></script>
 </body>
 
 </html>
