@@ -12,8 +12,9 @@ function set_rand_cards() {
 }
 function play_cards() {
   $(".card_play").attr("onclick", "");
+  $(".card_play").removeClass("card_hover");
   $(".card_play > img").css("filter", "invert(40%)");
-  $(".card_play").css("opacity", "0.5");
+  $(".card_play > img").css("opacity", "0.5");
   set_rand_cards();
   for(let i=1; i<=9; ++i){
     $(".c"+i).addClass("c"+i+"_active");
@@ -29,6 +30,7 @@ function remove_active_cards() {
 function remove_td() {
   $(".card").css("transition-delay","0s");
   $(".card").addClass("card_hover");
+  $(".card_play").removeClass("card_hover");
   let click = 0;
   $(".card_hover").click(function() {
     if(!click){
