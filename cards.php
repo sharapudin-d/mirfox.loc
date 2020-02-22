@@ -28,7 +28,7 @@
     </div>
     <div class="row">
       <div class="card c4"></div>
-      <div class="card card_play c5">
+      <div class="card card_play c5 card_hover" onclick="play_cards()">
         <img src="./assets/img/play_butt.png" alt="">
       </div>
       <div class="card c6"></div>
@@ -41,7 +41,7 @@
   </div>
 </div>
 
-
+<script type="text/javascript" src="./assets/js/cards.js"></script>
 
 
 <!-- js -->

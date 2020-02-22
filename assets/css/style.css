@@ -2,6 +2,8 @@
 :root {
   --kcolor: #18b86d;
   --bg: #6cd99b;
+  --movecard1: 85%;
+  --movecard2: -85%;
 }
 
 * {
@@ -153,11 +155,13 @@ form[role="form"] {
   margin: 5px;
   background: url(../img/card_bg1.png);
   background-size: 100%;
+  border: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: .4s;
 }
-.card:hover{
-  transform: scale(1.05);
+.card_play{
+  z-index: 0 !important;
 }
 .card_play > img{
   display: block;
@@ -166,4 +170,31 @@ form[role="form"] {
 }
 .card_play:hover > img{
   transform: scale(1.125);
+}
+.card_hover:hover{
+  transform: scale(1.05);
+}
+.c1_active{
+  transform: translateX(var(--movecard1)) translateY(var(--movecard1));
+}
+.c2_active{
+  transform: translateX(0) translateY(var(--movecard1));
+}
+.c3_active{
+  transform: translateX(var(--movecard2)) translateY(var(--movecard1));
+}
+.c4_active{
+  transform: translateX(var(--movecard1)) translateY(0);
+}
+.c6_active{
+  transform: translateX(var(--movecard2)) translateY(0);
+}
+.c7_active{
+  transform: translateX(var(--movecard1)) translateY(var(--movecard2));
+}
+.c8_active{
+  transform: translateX(0) translateY(var(--movecard2));
+}
+.c9_active{
+  transform: translateX(var(--movecard2)) translateY(var(--movecard2));
 }
