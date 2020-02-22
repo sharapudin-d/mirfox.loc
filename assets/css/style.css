@@ -1,3 +1,4 @@
+/* Start of Form code */
 :root {
   --kcolor: #18b86d;
   --bg: #6cd99b;
@@ -17,6 +18,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+}
+
 .bg_opacity {
   position: fixed;
   top: 0;
@@ -24,7 +29,7 @@ body {
   z-index: -10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 form[role="form"] {
@@ -89,7 +94,7 @@ form[role="form"] {
 }
 
 .fpage {
-  width: 48%;
+  width: 50%;
   padding: 10px;
   /* border-radius: 6px; */
   overflow: hidden;
@@ -107,7 +112,7 @@ form[role="form"] {
   width: 100%;
   /* height: 3px;
   background: var(--kcolor); */
-  box-shadow: 0 -4px 2px 2px var(--kcolor);
+  box-shadow: 0 -4px 0px 2px var(--kcolor);
   position: relative;
   bottom: -7px;
   transition: .4s;
@@ -128,4 +133,37 @@ form[role="form"] {
 
 .inp_cont>label {
   padding-left: 10px;
+}
+/* End of Form Code */
+.cards_content{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards_content > h1,h2,p{
+  /* text-align: center; */
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 10vw;
+  margin: 5px;
+  background: url(../img/card_bg1.png);
+  background-size: 100%;
+  cursor: pointer;
+  transition: .4s;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card_play > img{
+  display: block;
+  width: 80%;
+  transition: .4s;
+}
+.card_play:hover > img{
+  transform: scale(1.125);
 }
