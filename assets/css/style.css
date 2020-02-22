@@ -1,4 +1,131 @@
+:root {
+  --kcolor: #18b86d;
+  --bg: #6cd99b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background: red;
-    color: aliceblue;
+  padding: 0;
+  margin: 0;
+  background: url(../img/bg.png);
+  */ background-size: 400px 400px;
+  /* background: #fff; */
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg_opacity {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+form[role="form"] {
+  width: inherit;
+  transition: .5s;
+}
+
+.my_form {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, .8);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 20px;
+  width: 50%;
+  height: fit-content;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.form_block {
+  display: flex;
+  flex-direction: row;
+  width: 200%;
+}
+
+.login_form {
+  z-index: 1;
+}
+
+.reg_form {
+  transform: translateX(-100%);
+  transition-delay: .3s;
+  z-index: 0;
+}
+
+.left_sl {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition-delay: .3s;
+  height: 0;
+}
+
+.right_sl {
+  opacity: 0;
+  transform: translateX(100%);
+  transition-delay: 0;
+  height: 0;
+}
+
+.sub_btn {
+  background: var(--kcolor);
+  color: #e9e9e9;
+  font-weight: 600;
+}
+
+.fpages {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.fpage {
+  width: 48%;
+  padding: 10px;
+  /* border-radius: 6px; */
+  overflow: hidden;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.fpage:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.fpage::after {
+  content: "";
+  display: block;
+  width: 100%;
+  /* height: 3px;
+  background: var(--kcolor); */
+  box-shadow: 0 -4px 2px 2px var(--kcolor);
+  position: relative;
+  bottom: -7px;
+  transition: .4s;
+}
+.fpage1::after{
+  transform: translateX(120%);
+}
+.fpage2::after{
+  transform: translateX(-120%);
+}
+.fpage_active::after{
+  transform: translateX(0);
+}
+
+.inp_cont {
+  /* padding: 10px; */
+}
+
+.inp_cont>label {
+  padding-left: 10px;
 }

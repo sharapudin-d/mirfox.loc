@@ -1,0 +1,5 @@
+@media screen and (max-device-aspect-ratio: 9/12){
+    .my_form{
+        width: 90%;
+    }
+}
