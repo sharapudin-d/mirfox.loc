@@ -1,9 +1,15 @@
 @media screen and (max-device-aspect-ratio: 9/15){
-    .my_form{
-        width: 90%;
-    }
-    .card{
-      width: 20vw;
-      height: 20vw;
-    }
+  .my_form{
+      width: 90%;
+  }
+  .card{
+    width: 20vw;
+    height: 20vw;
+  }
+  .ipad_col{
+    display: none;
+  }
+  .my_col{
+    width: 100%;
+  }
 }

@@ -31,10 +31,10 @@ h1,h2,h3,h4,h5,h6{
   z-index: -10;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-form[role="form"] {
+.auth[role="form"] {
   width: inherit;
   transition: .5s;
 }

@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="form_block">
-      <form action="" class="login_form" role="form">
+      <form action="" class="login_form auth" role="form">
           <div class="form-group inp_cont">
               <label for="login">Логин: </label>
               <input type="text" id="login" class="form-control">
@@ -38,7 +38,7 @@
           </div>
           <button class="btn sub_btn" type="submit">Войти</button>
       </form>
-      <form action="" class="reg_form right_sl" role="form">
+      <form action="" class="reg_form right_sl auth" role="form">
         <div class="form-group inp_cont">
             <label for="login">Логин: </label>
             <input type="text" id="reg_login" class="form-control">
